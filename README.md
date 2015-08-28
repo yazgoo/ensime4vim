@@ -1,6 +1,6 @@
 # ensime4vim
 
-tools to be able to use ensime with vim
+tools to be able to use [ensime](https://github.com/ensime/ensime-server) with vim
 
 # demo
 
