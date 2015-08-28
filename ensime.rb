@@ -88,7 +88,7 @@ class EnsimeBridge < TCPSocket
         at_point "DocUri", path, row, col, size, "point"
     end
     def complete path, row, col
-        i = to_position path, row, col
+       i = to_position path, row, col
        req({"point"=>i, "maxResults"=>100,"typehint"=>"CompletionsReq",
             "caseSens"=>true,"fileInfo"=>{"file"=>path},"reload"=>false})
     end

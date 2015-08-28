@@ -35,7 +35,7 @@ ruby <<EOF
             array = payload["completions"].collect do |completion|
                 completion["name"]
             end.to_json
-            VIM.message(array)
+            File.open("/tmp/ensime_suggests", "w") { |f| f.write array }
             VIM.command("let g:suggests = #{array}")
         end
     end
@@ -104,6 +104,7 @@ fun! EnCompleteFunc(findstart, base)
                 call add(res, m) 
             endif 
         endfor 
+        unlet g:suggests
         return res 
     endif 
 endfun 

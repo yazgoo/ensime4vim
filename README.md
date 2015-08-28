@@ -4,7 +4,8 @@ tools to be able to use ensime with vim
 
 # howto
 
-All the following commands should be run from your scala directory..
+You need to clone this repository first.
+All the following commands should be run from your scala directory.
 
 First you need ensime sbt plugin:    
     
