@@ -2,6 +2,10 @@
 
 tools to be able to use ensime with vim
 
+# demo
+
+![alt tag](https://raw.github.com/yazgoo/ensime4vim/master/demo.gif)
+
 # howto
 
 You need to clone this repository first.
